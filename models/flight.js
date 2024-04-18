@@ -33,7 +33,8 @@ const flightSchema = new Schema({
       return new Date().toLocaleDateString()
     },
   },
-  tickets: [ticketSchema]
+  tickets: [ticketSchema],
+  meals: [{type: Schema.Types.ObjectId, ref: 'Meal'}]
 }, {
   timestamps: true
 })

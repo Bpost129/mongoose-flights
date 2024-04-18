@@ -42,7 +42,8 @@ body > main h1:first-child {
 
 body > nav {
   grid-area: nav;
-  background-color: #b8c0c2;
+  background: rgb(128,153,255);
+  background: linear-gradient(0deg, rgba(128,153,255,1) 0%, rgba(2,50,249,1) 100%);;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -64,7 +65,7 @@ nav > a {
 }
 
 nav > a:visited {
-  color: #424748;
+  color: whitesmoke;
 }
 
 nav > a:hover {
@@ -74,6 +75,7 @@ nav > a:hover {
 
 nav > a.active {
   color: white;
+  background-color: rgba(66, 71, 72, .9);
 }
 
 .fas::before {
