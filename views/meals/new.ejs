@@ -4,17 +4,23 @@
 
 <main>
 	<h1><%= title %></h1>
-  <p>Please first ensure that the Meal is not in the dropdown</p>
+  <p>Please make sure the meal is not listed below</p>
   <form id="add-meal-form" action="/meals" method="POST">
     <label for="name-input">Name:</label>
     <input type="text" name="name" id="name-input">
     <button type="submit">Add Meal</button>
   </form>
-  <ul>
-    <% meals.forEach(function(meal) { %>
-      <li><%= meal.name %></li>
-    <% }) %>
-  </ul>
+  <% if (meals.length) { %>
+    <h3>Available Meals</h3>
+    <ul>
+      <% meals.forEach(function(meal) { %>
+        <li><%= meal.name %></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <h3>No meals have been added</h3>
+  <% } %>
+  
 
 </main>
 

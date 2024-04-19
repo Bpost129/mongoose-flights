@@ -54,3 +54,14 @@ section div:nth-child(even) {
   grid-column: 2 / 3;
   margin-bottom: 24px;
 }
+
+#meal-edit-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: 50px; */
+}
+
+#edit-flight {
+  margin-bottom: 15px;
+}
