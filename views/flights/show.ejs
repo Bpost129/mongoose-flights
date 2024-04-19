@@ -13,6 +13,13 @@
     <div><%= flight.flightNo %></div>
     <div>Departure: </div>
     <div><%= flight.departs.toISOString().slice(0, 16) %></div>
+    <div>Meals: </div>
+    <select>
+      <% meals.forEach(function(meal) { %>
+        <option><%= meal.name %></option>
+      <% }) %>
+    </select>
+
     <a href="/flights/<%= flight._id %>/edit">
       <button>Edit Flight</button>
     </a>
