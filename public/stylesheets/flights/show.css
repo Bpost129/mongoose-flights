@@ -59,7 +59,7 @@ section div:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-left: 50px; */
+  margin-top: 15px;
 }
 
 #edit-flight {
